@@ -4,7 +4,6 @@ package org.example;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class two배열 {
     public static void 이차배열문제1() {

@@ -1,11 +1,11 @@
 package org.example;
 
-import com.sun.security.jgss.GSSUtil;
+import arraytest.ArrayListTest1;
 
 import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        two배열.이차배열문제4();
+        ArrayListTest1.어레이리스트();
     }
 }

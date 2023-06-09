@@ -19,11 +19,12 @@ public class MemoVo {
 
     public MemoVo() {
 //        System.out.println("기본 생성자가 실행");
+
 //        생성자 MemoVo(String name, boolean gender, String memo)를 실행한다.
         this("무명씨", false, "없음");
     }
 
-//                (                 지역변수                )
+    //                (                 지역변수                )
     public MemoVo(String name, boolean gender, String memo) {
 //        같은{} 블록에 같은 이름을 가지는 지역 변수와 멤버 변수가 있을 경우 지역변수에 우선권이있다
 //        super() : 부모 클래스의 생성자를 의미한다 생략하면 컴파일러가 자동으로 넣어준다
@@ -37,13 +38,10 @@ public class MemoVo {
         this.memo = memo;
     }
 
-//    객체에 저장된 내용을 출력할려면 toString() 메소드를 Override(재정의) 한다.
+    //    객체에 저장된 내용을 출력할려면 toString() 메소드를 Override(재정의) 한다.
     @Override
     public String toString() {
-        return "MemoVo{" +
-                "name='" + name + '\'' +
-                ", gender=" + gender +
-                ", memo='" + memo + '\'' +
-                '}';
+        return no + "." + name + "(" + (gender ? "남" : "여") + ")님이 " + "에 남긴 말 " + memo;
+
     }
 }
