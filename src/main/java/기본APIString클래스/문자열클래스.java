@@ -1,10 +1,32 @@
-package 기본API;
+package 기본APIString클래스;
 
 public class 문자열클래스 {
     public static void main(String[] args) {
-        String str = "hello";
+        String str = "Hello";
+//        concat()
         str.concat(" world");
         System.out.println(str.concat(" world"));
+
+//        substring(시작위치,끝위치);
+        System.out.println(str.substring(1,5));
+
+//        toUpperCase(),toLowerCase()
+        System.out.println(str.toUpperCase());
+        System.out.println(str.toLowerCase());
+
+//        charAt(index),indexOf(문자열);
+        System.out.println(str.charAt(0));
+        System.out.println(str.indexOf('0')); //-1이 출력되면 못찾았다는 뜻
+
+//        equals()
+        System.out.println(str.equals("Hello"));
+        System.out.println(str.equals("hello")); //대소문자 구분은 한다
+
+//        trim() , replace(),replaceAll()
+        System.out.println("  hello  ".trim());
+        System.out.println("hello world".replace('l','L'));
+        System.out.println("hello world".replaceAll("hello","bye"));
+
     }
 
 }

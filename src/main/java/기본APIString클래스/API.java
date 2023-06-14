@@ -1,4 +1,4 @@
-package 기본API;
+package 기본APIString클래스;
 
 public class API {
 /*
